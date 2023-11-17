@@ -1,0 +1,20 @@
+.img {
+  object-fit: cover;
+  overflow: hidden;
+  width: 100%;
+}
+
+.imgText {
+  position: absolute;
+  bottom: 5px;
+  right: 0;
+  background-color: #3a4d39d4;
+  color: #ECE3CE;
+  border-top-left-radius: 6px;
+  padding: 12px;
+  font-style: oblique;
+}
+
+.imgWrapper {
+  position: relative;
+}

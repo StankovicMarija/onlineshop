@@ -1,0 +1,22 @@
+.sortBar {
+  background-color: #739072;
+  color: #ECE3CE;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.options {
+  background-color: #739072;
+  color: #ECE3CE;
+  border: 1px solid #b09d71;
+  font-size: 16px;
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  .sortBar {
+    text-align: right;
+    padding: 2rem 6rem;
+  }
+}

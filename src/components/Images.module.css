@@ -2,11 +2,15 @@
   object-fit: cover;
   overflow: hidden;
   width: 100%;
+  aspect-ratio: 1/1;
+  display: block;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
 }
 
 .imgText {
   position: absolute;
-  bottom: 5px;
+  bottom: 0;
   right: 0;
   background-color: #3a4d39d4;
   color: #ECE3CE;
@@ -17,4 +21,16 @@
 
 .imgWrapper {
   position: relative;
+}
+
+@media (min-width: 768px) {
+  .img {
+    border-radius: 14px;
+    /* width: 500px;
+    aspect-ratio: 2/1; */
+  }
+
+  .imgText {
+    border-bottom-right-radius: 14px;
+  }
 }

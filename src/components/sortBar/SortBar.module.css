@@ -1,9 +1,7 @@
 .sortBar {
   background-color: #739072;
   color: #ECE3CE;
-  font-size: 22px;
-  font-weight: bold;
-  text-align: center;
+  padding: 20px;
 }
 
 .options {
@@ -16,7 +14,8 @@
 
 @media (min-width: 768px) {
   .sortBar {
+    font-size: 22px;
     text-align: right;
-    padding: 2rem 6rem;
+    padding: 32px 60px;
   }
 }

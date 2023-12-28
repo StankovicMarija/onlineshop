@@ -1,11 +1,11 @@
 import React, { useContext } from 'react';
 import parse from 'html-react-parser';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { CartContext } from '../context/CartContext';
 import { ProductContext } from '../context/ProductContext';
 import ImageSlider from '../slider/ImageSlider';
-import classes from './ProductDetails.module.css';
 import Button from '../button/button';
+import classes from './ProductDetails.module.css';
 
 function ProductDetails() {
   const { id } = useParams();
@@ -15,11 +15,12 @@ function ProductDetails() {
   const productItem = data.find((item) => item.id === id);
   const el = parse(productItem.features);
 
-  return (
+  return (data && (
     <div className={classes.product}>
+      <Link to="/" className={classes.backLink}>&#8678; Back to Home</Link>
       <section className={classes.name}>
         <h1>{productItem.name}</h1>
-        <div>
+        <div className={classes.description}>
           <h2>Product description:</h2>
           <h3>{productItem.description}</h3>
         </div>
@@ -56,7 +57,7 @@ function ProductDetails() {
         <Button variant="card" onClick={() => addToCart(productItem, id)}>+ Add to Cart</Button>
       </section>
     </div>
-  );
+  ));
 }
 
 export default ProductDetails;

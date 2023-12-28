@@ -1,7 +1,7 @@
 .product {
   background-color: #ECE3CE;
   color: #4F6F52;
-  padding: 50px;
+  padding: 120px 20px 80px;
 }
 
 .product p {
@@ -9,14 +9,25 @@
 }
 
 .name {
-  padding: 50px;
-  opacity: 80%;
+  padding: 30px 0 ;
+  opacity: 90%;
 }
 
 .name h1 {
   margin: 0;
-  font-size: 38px;
+  font-size: 26px;
   text-shadow: 1px 1px 2px #a25c5b;
+}
+
+.description {
+  border: 1px solid #A25B5B;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+.description h3 {
+  margin-top: 15px;
 }
 
 .imgContainer {
@@ -25,51 +36,96 @@
   flex-direction: column;
 }
 
-@media (min-width: 768px) {
-  .imgContainer {
-    flex-direction: row;
-    justify-content: space-around;
-  }
+.backLink {
+  text-decoration: none;
+  color: #739072;
+  font-size: 18px;
 }
 
 .slider {
   max-width: 55%;
 }
 
-.addItem {
-  padding-bottom: 6rem;
-  margin: 30px;
-  display: flex;
-  align-items: stretch;
-  justify-content: space-around;
-  flex-direction: column;
-}
-
-@media (min-width: 768px) {
-  .addItem {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    padding-right: 25px;
-  }
-}
-
 .features  {
-  text-align: end;
   font-size: 20px;
   margin: 0;
-  text-shadow: 1px 1px 2px #a25c5b;
+  border: 1px solid #A25B5B;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 15px;
 }
 
 .features ul p {
-  margin: 0;
-  padding: 5px;
+  margin: 10px;
+}
+
+.addItem {
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.addItem p {
+  margin: 15px 0;
 }
 
 .price {
   font-size: 24px;
   font-weight: bold;
-  padding-right: 35px;
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .name h1 {
+    font-size: 30px;
+    text-shadow: none;
+  }
+
+  .backLink {
+    font-size: 24px;
+  }
+
+  .description {
+    border: none;
+    padding: 20px 0;
+  }
+
+  .imgContainer {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .product {
+    background-color: #ECE3CE;
+    color: #4F6F52;
+    padding: 148px 60px 100px;
+  }
+
+  .addItem {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-right: 25px;
+  }
+
+  .features  {
+    font-size: 24px;
+    border: none;
+  }
+  
+  .features ul p {
+    margin: 15px 0;
+  }
+
+  .price {
+    align-self: flex-end;
+    margin-bottom: 15px;
+  }
+
+  .addItem button {
+    align-self: end;
+    font-size: 16px;
+  }
 }
 
   

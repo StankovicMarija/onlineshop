@@ -27,8 +27,8 @@
 .text {
   color: #3a4d39d0;
   font-size: 18px;
-  margin-left: 30px;
   font-weight: bold;
+  text-align: center;
 }
 
 .shpgList {

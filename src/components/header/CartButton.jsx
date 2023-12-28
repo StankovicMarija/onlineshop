@@ -13,7 +13,7 @@ function HeaderCartButton() {
       <span className={classes.icon}>
         <CartIcon />
       </span>
-      <span>YOUR CART</span>
+      <span className={classes.btnName}>YOUR CART</span>
       <span className={classes.badge}>{numOfItems}</span>
     </button>
   );

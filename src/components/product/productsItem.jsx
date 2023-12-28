@@ -17,7 +17,7 @@ function ProductsItem({ item }) {
       <Link to={`/product/${id}`}>
         <Image image={images} id={id} />
       </Link>
-      <div className={classes.descrip}>
+      <div className={classes.description}>
         <h1>{category}</h1>
         <Link to={`/product/${id}`} className={classes.title}>{name}</Link>
         <div className={classes.wrapper}>

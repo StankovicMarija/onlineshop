@@ -1,14 +1,15 @@
 import classes from './Images.module.css';
+import noImg from './assets/noimage.svg';
 
 function Image({ image }) {
-  const imgUrl = image ? image.slice(',') : '';
+  const imgUrl = image ? image.slice(',')[0] : noImg;
 
-  return (image ? (
+  return (
     <div className={classes.imgWrapper}>
-      <img src={imgUrl[0]} alt="img" className={classes.img} />
-      <div className={classes.imgText}>See more...</div>
+      <img src={imgUrl} alt="img" className={classes.img} />
+      {image && <div className={classes.imgText}>See more...</div>}
     </div>
-  ) : <div />);
+  );
 }
 
 export default Image;

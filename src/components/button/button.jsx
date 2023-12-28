@@ -7,7 +7,7 @@ function Button({
 }) {
   const cls = classNames(classes.button, className, {
     [classes.card]: variant === 'card',
-    [classes.page]: variant === 'page',
+    [classes.page]: variant === 'back',
   });
 
   return (

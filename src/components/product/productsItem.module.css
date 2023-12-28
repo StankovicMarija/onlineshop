@@ -1,22 +1,21 @@
+.description {
+  color: #3A4D39;
+  padding: 15px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.description h1 {
+  color: #3A4D394D;
+  margin: 0;
+}
+
 .title {
   text-decoration: none;
   color:#3A4D39;
   font-size: 28px;
   font-weight: bold;
-}
-
-.descrip {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  color: #3A4D39;
-  width: 100%;
-  padding: 0 10px;
-}
-
-.descrip h1 {
-  color: #3A4D394D;
-  margin: 0;
 }
 
 .price {
@@ -25,7 +24,19 @@
 
 .wrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding: 15px 0 10px;
 }
+
+@media (min-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .price {
+    margin: 10px 0;
+  }
+}
+

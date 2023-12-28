@@ -3,19 +3,29 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 6rem;
-  background-color: #4F6F52;
+  height: 96px;
   color: #ECE3CE;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   z-index: 10;
+  background: radial-gradient(circle, rgba(115,144,114,1) 47%, rgba(79,111,82,1) 100%);
+  padding: 0 20px;
+}
+
+.header h1 {
+  text-wrap: nowrap;
+  font-size: 26px;
 }
 
 @media (min-width: 768px) {
   .header {
     padding: 0 60px;
+    height: 128px;
+  }
+
+  .header h1 {
+    font-size: 38px;
   }
 }

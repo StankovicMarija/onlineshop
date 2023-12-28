@@ -3,12 +3,12 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: #4F6F52;
+  /* background-color: #4F6F52; */
+  background: radial-gradient(circle, rgba(115,144,114,1) 47%, rgba(79,111,82,1) 90%);
   color: #ECE3CE;
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   z-index: 10;
   font-size: 14px;
 }

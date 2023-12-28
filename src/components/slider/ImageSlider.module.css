@@ -1,8 +1,8 @@
 .slider {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .image {
@@ -14,7 +14,7 @@
   position: absolute;
   right: 0;
   font-size: 3rem;
-  z-index: 10;
+  z-index: 5;
   cursor: pointer;
   user-select: none;
   padding: 6px 6px;
@@ -32,6 +32,6 @@
 
 @media (min-width: 768px) {
   .image {
-    width: 500px;
+    max-width: 100%;
   }
 }
